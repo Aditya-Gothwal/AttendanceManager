@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="signup.css">
+
+<title>Create Account</title>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Left Section -->
+
+    <div class="left">
+
+        <h1>Attendance<br>Manager</h1>
+
+        <p>
+            Create your account and start managing your
+            attendance, subjects and reports with ease.
+        </p>
+
+        <div class="features">
+
+            <div>
+                <i class="fa-solid fa-check"></i>
+                Attendance Tracking
+            </div>
+
+            <div>
+                <i class="fa-solid fa-check"></i>
+                Smart Reminders
+            </div>
+
+            <div>
+                <i class="fa-solid fa-check"></i>
+                Reports & Analytics
+            </div>
+
+            <div>
+                <i class="fa-solid fa-check"></i>
+                Subject Management
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Right Section -->
+
+    <div class="right">
+
+        <form id="signupForm" class="signup-card">
+            <h2>Create Account</h2>
+
+            <p class="sub">
+                Fill in your details to create your account.
+            </p>
+
+            <!-- Name -->
+
+            <label>Full Name</label>
+
+            <div class="input-box">
+
+                <i class="fa-regular fa-user"></i>
+
+                <input
+                type="text"
+                id="fullName"
+                placeholder="Enter your full name">
+
+            </div>
+
+            <!-- Email -->
+
+            <label>Email Address</label>
+
+            <div class="input-box">
+
+                <i class="fa-regular fa-envelope"></i>
+
+                <input
+                type="email"
+                id="email"
+                placeholder="Enter your email">
+
+            </div>
+
+            <!-- Roll Number -->
+
+            <label>Roll Number / Student ID</label>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-id-card"></i>
+
+                <input
+                type="text"
+                id="roll"
+                placeholder="Enter your roll number">
+
+            </div>
+
+            <!-- Mobile -->
+
+            <label>Mobile Number</label>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <input
+                type="tel"
+                id="mobile"
+                placeholder="Enter your mobile number">
+
+            </div>
+
+            <!-- Password -->
+
+            <label>Password</label>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
+                type="password"
+                id="password"
+                placeholder="Create password">
+
+            </div>
+
+            <!-- Confirm Password -->
+
+            <label>Confirm Password</label>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm password">
+
+            </div>
+
+            <div class="terms">
+
+                <input id="terms" type="checkbox">
+
+                <span>
+                    I agree to the
+                    <a href="#">Terms & Conditions</a>
+                </span>
+
+            </div>
+
+            <button id="signupBtn" class="signup-btn">
+
+                Create Account
+
+            </button>
+
+            <p class="login-link">
+
+                Already have an account?
+
+                <a href="login.html">
+
+                    Sign In
+
+                </a> 
+ 
+            </p>
+
+        </form>
+
+    </div>
+
+</div>
+<script src="storage.js"></script>
+<script src="theme.js"></script>
+<script src="signup.js"></script>
+</body>
+</html>

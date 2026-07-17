@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Timetable</title>
+<link rel="stylesheet" href="timetable.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+<aside class="sidebar">
+<div class="logo">Attendance<br>Manager</div>
+<a href="index.html">Dashboard</a>
+<a href="subject.html">Subjects</a>
+<a class="active" href="timetable.html">Timetable</a>
+<a href="attendance.html">Attendance</a>
+<a href="report.html">Report</a>
+<a href="reminder.html">Reminder</a>
+<a href="setting.html">Setting</a>
+</aside>
+<main class="main">
+<div class="header"><div><h1>Timetable</h1><p>Manage your weekly class timetable</p></div><button class="n">+ Add Class</button></div>
+<div class="days"><button class="m active-day" data-day ="Monday" >Monday</button><button class="m" data-day ="Tuesday" >Tuesday</button><button class="m" data-day ="Wednesday" >Wednesday</button><button class="m" data-day ="Thursday" >Thursday</button><button class="m" data-day ="Friday" >Friday</button></div>
+<div class="card"><table><thead><tr><th>Time</th><th>Subject</th><th>Professor</th><th>Room</th><th>Action</th></tr></thead><tbody id="timetableBody">
+</tbody></table></div>
+ 
+</main></div></body><script src="theme.js"></script><script src="storage.js"></script><script src="timetable.js"></script></html> 

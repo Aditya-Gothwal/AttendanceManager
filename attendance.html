@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Attendance</title>
+
+    <link rel="stylesheet" href="attendance.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- ================= Sidebar ================= -->
+
+<div class="sidebar">
+
+    <div class="logo">
+        Attendance<br>
+        Manager
+    </div>
+
+    <a href="index.html">Dashboard</a>
+
+    <a href="subject.html">Subjects</a>
+
+    <a href="timetable.html">Timetable</a>
+
+    <a href="attendance.html" class="active">Attendance</a>
+
+    <a href="report.html">Report</a>
+
+    <a href="reminder.html">Reminder</a>
+
+    <a href="setting.html">Setting</a>
+
+</div>
+
+<!-- ================= Main ================= -->
+
+<div class="main">
+
+<!-- ================= Header ================= -->
+
+<div class="page-header">
+
+    <div>
+
+        <h1>Attendence</h1>
+
+        <p>Mark your attendance for today's classes</p>
+
+    </div>
+
+</div>
+
+<!-- ================= Date Card ================= -->
+
+<div class="date-card">
+
+    <div class="date-icon">
+
+        <i class="fa-regular fa-calendar-days"></i>
+
+    </div>
+
+    <div class="date-content">
+
+        <p>Today's date</p>
+
+        <h3 id="todayDate"></h3>
+
+    </div>
+
+</div>
+
+<!-- ================= Today's Classes ================= -->
+
+<div class="section-title">
+
+    <h2>Today's Classes</h2>
+
+    <p>Select absent or present for each class</p>
+
+</div>
+
+<!-- ================= Attendance Cards ================= -->
+
+<div id="attendanceContainer">
+ 
+ 
+</div>
+
+<!-- ================= Save Button ================= -->
+
+<div class="save-box">
+
+    <button class="save-btn">
+
+        Save Today's Attendance
+
+    </button>
+
+</div>
+
+</div>
+
+</div>
+<script src="storage.js"></script>
+<script src="theme.js"></script>
+<script src="attendance.js"></script>
+
+</body>
+
+</html>

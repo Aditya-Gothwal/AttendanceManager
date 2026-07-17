@@ -1,0 +1,307 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="setting.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <div class="sidebar">
+
+        <div class="logo">
+            Attendance<br>
+            Manager
+        </div>
+
+        <a href="index.html">Dashboard</a>
+
+        <a href="subject.html">Subjects</a>
+
+        <a href="timetable.html">Timetable</a>
+
+        <a href="attendance.html">Attendance</a>
+
+        <a href="report.html">Report</a>
+
+        <a href="reminder.html">Reminder</a>
+
+        <a href="setting.html" class="active">Setting</a>
+
+    </div>
+
+    <!-- ================= MAIN ================= -->
+
+    <div class="main">
+
+        <h1 class="page-title">
+            Settings
+        </h1>
+
+        <p class="page-subtitle">
+            Manage your account and application preferences
+        </p>
+
+        <!-- ================= TOP GRID ================= -->
+
+        <div class="settings-grid">
+
+            <!-- ================= PROFILE ================= -->
+
+            <div class="card">
+
+                <div class="card-header">
+
+                    <div class="header-icon">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+
+                    <div>
+
+                        <h2>Profile</h2>
+
+                        <p>
+                            View and update your profile
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Full Name
+                    </label>
+
+                    <input
+                    type="text"
+                    id="fullName">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Email Address
+                    </label>
+
+                    <input
+                    type="email"
+                    id="email">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Roll Number
+                    </label>
+
+                    <input
+                    type="text"
+                    id="rollNumber">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Mobile Number
+                    </label>
+
+                    <input
+                    type="text"
+                    id="mobile">
+
+                </div>
+
+                <button
+                class="save-btn"
+                id="saveProfile">
+
+                    <i class="fa-solid fa-floppy-disk"></i>
+
+                    Save Profile
+
+                </button>
+
+            </div>
+
+            <!-- ================= APPEARANCE ================= -->
+
+             
+
+        </div>
+
+        <!-- ================= NOTIFICATIONS ================= -->
+
+        <div class="card notification-card">
+
+            <div class="card-header">
+
+                <div class="header-icon">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+
+                <div>
+
+                    <h2>Notifications</h2>
+
+                    <p>
+                        Configure notification preferences
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="setting-row">
+
+                <div>
+
+                    <h3>Email Notifications</h3>
+
+                    <p>
+                        Receive updates by email
+                    </p>
+
+                </div>
+
+                <label class="switch">
+
+                    <input
+                    type="checkbox"
+                    id="emailNotification">
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+            <div class="setting-row">
+
+                <div>
+
+                    <h3>Attendance Reminder</h3>
+
+                    <p>
+                        Daily reminder to mark attendance
+                    </p>
+
+                </div>
+
+                <label class="switch">
+
+                    <input
+                    type="checkbox"
+                    id="attendanceReminder">
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+            <div class="setting-row">
+
+                <div>
+
+                    <h3>Low Attendance Alert</h3>
+
+                    <p>
+                        Notify when attendance falls below target
+                    </p>
+
+                </div>
+
+                <label class="switch">
+
+                    <input
+                    type="checkbox"
+                    id="lowAttendanceAlert">
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+        </div>
+
+        <!-- ================= ACCOUNT ================= -->
+
+        <div class="card">
+
+            <div class="card-header">
+
+                <div class="header-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <div>
+
+                    <h2>Account</h2>
+
+                    <p>
+                        Manage your account settings
+                    </p>
+
+                </div>
+
+            </div>
+
+            <button class="action-btn" id="changePassword">
+
+                <i class="fa-solid fa-key"></i>
+
+                Change Password
+
+            </button>
+
+            <button class="action-btn" id="exportData">
+
+                <i class="fa-solid fa-download"></i>
+
+                Export Data
+
+            </button>
+
+            <button class="action-btn" id="clearAttendance">
+
+                <i class="fa-solid fa-trash"></i>
+
+                Clear Attendance Data
+
+            </button>
+
+            <button class="logout-btn" id="logoutBtn">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="storage.js"></script>
+<script src="theme.js"></script>
+<script src="setting.js"></script>
+
+</body>
+</html>

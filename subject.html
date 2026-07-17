@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Subjects</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="subject.css">
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<!-- ================= SIDEBAR ================= -->
+
+<div class="sidebar">
+
+<div class="logo">
+Attendance<br>
+Manager
+</div>
+
+
+<a href="index.html">Dashboard</a>
+
+<a href="subject.html" class="active">Subjects</a>
+
+<a href="timetable.html">Timetable</a>
+
+<a href="attendance.html">Attendance</a>
+
+<a href="report.html">Report</a>
+
+<a href="reminder.html">Reminder</a>
+
+<a href="setting.html">Setting</a>
+
+
+</div>
+
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="main">
+
+
+<div class="page-header">
+
+
+    <div>
+        <h2>Subjects</h2>
+
+        <p>
+            Manage all your subject
+        </p>
+    </div>
+
+
+
+     
+
+
+</div>
+
+
+
+
+<!-- ================= CARDS ================= -->
+
+
+<section class="cards">
+
+
+<div class="card total">
+    
+    <div class="card-icon blue">
+        <i class="fa-solid fa-book-open"></i>
+    </div>
+    <div class="text">
+
+        <h3>Total Subjects</h3>
+
+        <strong id="totalSubjects">6</strong>
+
+        <p>
+            Subjects Added
+        </p>
+    </div>
+
+
+     
+
+</div>
+
+
+
+
+<div class="card active-card">
+    <div class="card-icon green">
+         <i class="fa-solid fa-clipboard-check"></i>
+    </div>
+
+    <div class="text">
+
+        <h3>Active Subjects</h3>
+
+        <strong id="activeSubjects">6</strong>
+
+        <p>
+            Currently Active
+        </p>
+
+    </div>
+
+     
+
+</div>
+
+
+
+
+
+<div class="card inactive">
+
+<div class="card-icon orange">
+    <i class="fa-solid fa-calendar-days"></i>
+</div>
+
+<div class="text">
+
+<h3>Inactive Subjects</h3>
+
+<strong id="inactiveSubjects">0</strong>
+
+<p>
+Currently Inactive
+</p>
+
+</div>
+
+
+ 
+
+
+</div>
+
+
+
+
+
+
+<div class="card archive">
+
+<div class="card-icon red">
+    <i class="fa-solid fa-trash"></i>
+</div>
+<div class="text">
+
+<h3>Total Archived</h3>
+
+<strong id="archivedSubjects">0</strong>
+
+<p>
+Subjects Archived
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<!-- ================= TABLE ================= -->
+
+<section class="subject-box">
+
+
+<div class="table-header">
+
+
+<h2>
+All Subjects
+</h2>
+
+
+<input 
+type="text"
+id="searchSubject"
+placeholder="Search subjects">
+
+
+</div>
+
+
+
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>#</th>
+
+<th>Course</th>
+
+<th>Code</th>
+
+<th>Type</th>
+
+<th>Status</th>
+
+ 
+
+
+</tr>
+
+</thead>
+
+
+
+
+<tbody id="subjectTable">
+
+</tbody>
+
+
+</table> 
+
+
+
+</section>
+
+
+
+
+
+</main>
+
+
+</div>
+
+
+</body>
+<script src="storage.js"></script>
+<script src="theme.js"></script>
+<script src="subject.js"></script>
+</html>

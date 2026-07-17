@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reminder.css">
+    <title>Report</title>
+
+    <link rel="stylesheet" href="report.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <div class="sidebar">
+
+        <div class="logo">
+            Attendance<br>
+            Manager
+        </div>
+
+
+        <a href="index.html">Dashboard</a>
+
+        <a href="subject.html">Subjects</a>
+
+        <a href="timetable.html">Timetable</a>
+
+        <a href="attendance.html">Attendance</a>
+
+        <a href="report.html" class="active">Report</a>
+
+        <a href="reminder.html">Reminder</a>
+
+        <a href="setting.html">Setting</a>
+
+
+    </div>
+
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <div class="main">
+
+
+
+        <div class="page-title">
+
+            <h1>Reports</h1>
+
+            <p>
+                Analyze your attendance statistics
+            </p>
+
+        </div>
+
+
+
+
+
+        <!-- ================= SUMMARY CARDS ================= -->
+
+
+        <div class="summary-box">
+
+
+
+            <div class="summary-card overall">
+
+
+                <div class="card-title">
+                    Overall Attendance
+                </div>
+
+
+                <div class="card-value" id="c1">
+                    82%
+                </div>
+
+
+                <img src="f1.png" alt="attendance">
+
+
+            </div>
+
+
+
+
+
+            <div class="summary-card total">
+
+
+                <div class="card-title">
+                    Total Classes
+                </div>
+
+
+                <div class="card-value" id="c2">
+                    126
+                </div>
+
+
+                <img src="f2.png" alt="classes">
+
+
+            </div>
+
+
+
+
+
+            <div class="summary-card attended">
+
+
+                <div class="card-title">
+                    Classes Attended
+                </div>
+
+
+                <div class="card-value" id="c3">
+                    103
+                </div>
+
+
+                <img src="f3.png" alt="attended">
+
+
+            </div>
+
+
+
+
+
+            <div class="summary-card missed">
+
+
+                <div class="card-title">
+                    Classes Missed
+                </div>
+
+
+                <div class="card-value" id="c4">
+                    23
+                </div>
+
+
+                <img src="f4.png" alt="missed">
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <!-- ================= REPORT CONTENT ================= -->
+
+
+        <div class="report-content">
+
+
+
+
+
+            <!-- SUBJECT ATTENDANCE -->
+
+
+            <div class="subject-report">
+
+
+                <h2>
+                    Attendance by Subjects
+                </h2>
+
+
+
+                <div class="table">
+
+
+
+                    <div class="table-head">
+
+                        <div>
+                            Subject
+                        </div>
+
+                        <div>
+                            Attendance
+                        </div>
+
+                        <div>
+                            Progress
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+                    <div id="subjectRows">
+
+
+                        <!-- JS will add rows here -->
+
+
+                    </div>
+
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <!-- CHART -->
+
+
+            <div class="chart-box">
+
+
+                <h2>
+                    Attendance Trend
+                </h2>
+
+
+                <canvas id="attendanceChart"></canvas>
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+</div>
+
+<script src="storage.js"></script>
+<script src="theme.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="report.js"></script>
+
+
+</body>
+
+</html> 

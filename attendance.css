@@ -1,0 +1,564 @@
+/* ================= GOOGLE FONT ================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ================= RESET ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:#f3f4f6;
+}
+
+
+/* ================= CONTAINER ================= */
+
+.container{
+    display:flex;
+}
+
+
+/* ================= SIDEBAR ================= */
+
+.sidebar{
+
+    position:fixed;
+    left:0;
+    top:0;
+
+    width:230px;
+    height:100vh;
+
+    background:#3032aa;
+    color:white;
+
+    padding:20px;
+
+}
+
+.logo{
+
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+
+    margin-bottom:50px;
+
+}
+
+.sidebar a{
+
+    display:block;
+
+    color:white;
+    text-decoration:none;
+
+    padding:15px;
+
+    font-size:17px;
+
+    border-radius:8px;
+
+    margin-bottom:8px;
+
+    transition:.3s;
+
+}
+
+.sidebar a:hover{
+
+    background:#4548d8;
+
+}
+
+.sidebar a.active{
+
+    background:#4548d8;
+
+}
+
+
+/* ================= MAIN ================= */
+
+.main{
+
+    margin-left:230px;
+
+    width:calc(100% - 230px);
+
+    min-height:100vh;
+
+    padding:24px;
+
+}
+
+
+/* ================= HEADER ================= */
+
+.page-header{
+
+    margin-bottom:25px;
+
+}
+
+.page-header h1{
+
+    font-size:45px;
+
+    font-weight:700;
+
+    color:#111827;
+
+}
+
+.page-header p{
+
+    color:#6B7280;
+
+    margin-top:4px;
+
+}
+
+
+/* ================= DATE CARD ================= */
+
+.date-card{
+
+    background:white;
+
+    border-radius:14px;
+
+    padding:18px 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+    margin-bottom:30px;
+
+}
+
+.date-icon{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:10px;
+
+    background:#EEF2FF;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#4361EE;
+
+    font-size:22px;
+
+}
+
+.date-content p{
+
+    color:#6B7280;
+
+    font-size:14px;
+
+}
+
+.date-content h3{
+
+    margin-top:4px;
+
+    font-size:18px;
+
+    color:#111827;
+
+}
+
+.date-content span{
+
+    color:#6B7280;
+
+    font-weight:400;
+
+}
+
+
+/* ================= TITLE ================= */
+
+.section-title{
+
+    margin-bottom:18px;
+
+}
+
+.section-title h2{
+
+    font-size:30px;
+
+    color:#111827;
+
+}
+
+.section-title p{
+
+    color:#6B7280;
+
+    margin-top:5px;
+
+}
+
+
+/* ================= ATTENDANCE CONTAINER ================= */
+
+#attendanceContainer{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+
+/* ================= CARD ================= */
+
+.class-card{
+
+    background:white;
+
+    border-radius:14px;
+
+    padding:24px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+}
+
+.left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:60px;
+
+}
+
+.left h3{
+
+    min-width:160px;
+
+    font-size:24px;
+
+    font-weight:500;
+
+}
+
+.left span{
+
+    font-size:18px;
+
+    color:#374151;
+
+}
+
+
+/* ================= BUTTONS ================= */
+
+.right{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.present-btn{
+
+    width:110px;
+
+    height:42px;
+
+    border-radius:8px;
+
+    border:1.5px solid #22C55E;
+
+    background:#DCFCE7;
+
+    color:#22C55E;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.present-btn:hover{
+
+    background:#22C55E;
+
+    color:white;
+
+}
+
+.absent-btn{
+
+    width:110px;
+
+    height:42px;
+
+    border-radius:8px;
+
+    border:1.5px solid #EF4444;
+
+    background:#FEE2E2;
+
+    color:#EF4444;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.absent-btn:hover{
+
+    background:#EF4444;
+
+    color:white;
+
+}
+
+
+/* ================= SAVE ================= */
+
+.save-box{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-top:45px;
+
+}
+
+.save-btn{
+
+    width:260px;
+
+    height:46px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#3032aa;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.save-btn:hover{
+
+    background:#4548d8;
+
+}
+
+
+/* ================= TABLET ================= */
+
+@media(max-width:992px){
+
+.main{
+
+    margin-left:230px;
+
+    width:calc(100% - 230px);
+
+    padding:18px;
+
+}
+
+.page-header h1{
+
+    font-size:34px;
+
+}
+
+.class-card{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+}
+
+.left{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:10px;
+
+}
+
+.left h3{
+
+    min-width:auto;
+
+    font-size:22px;
+
+}
+
+.right{
+
+    width:100%;
+
+}
+
+.present-btn,
+
+.absent-btn{
+
+    flex:1;
+
+}
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.sidebar{
+
+    width:100%;
+
+    height:auto;
+
+    position:relative;
+
+}
+
+.logo{
+
+    margin-bottom:20px;
+
+}
+
+.main{
+
+    margin-left:0;
+
+    width:100%;
+
+}
+
+.sidebar a{
+
+    text-align:center;
+
+}
+
+.page-header h1{
+
+    font-size:30px;
+
+}
+
+.date-card{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+.right{
+
+    flex-direction:column;
+
+}
+
+.present-btn,
+
+.absent-btn{
+
+    width:100%;
+
+}
+
+.save-btn{
+
+    width:100%;
+
+}
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media(max-width:480px){
+
+.main{
+
+    padding:15px;
+
+}
+
+.page-header h1{
+
+    font-size:26px;
+
+}
+
+.section-title h2{
+
+    font-size:24px;
+
+}
+
+.left h3{
+ 
+    font-size:20px;
+
+}
+
+.left span{
+
+    font-size:16px;
+
+}
+
+}

@@ -1,0 +1,542 @@
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+
+}
+
+
+body{
+
+background:#f1f2f5;
+
+}
+
+
+
+
+
+/* ================= LAYOUT ================= */
+
+
+.container{
+
+display:flex;
+
+}
+
+
+
+
+/* ================= SIDEBAR ================= */
+
+
+.sidebar{
+
+    position:fixed;
+    left:0;
+    top:0;
+
+    width:230px;
+    height:100vh;
+
+    background:#3032aa;
+    color:white;
+
+    padding:20px;
+}
+
+
+.logo{
+
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+
+    margin-bottom:50px;
+}
+
+
+
+.sidebar a{
+
+    display:block;
+
+    color:white;
+    text-decoration:none;
+
+    padding:15px;
+
+    font-size:17px;
+
+    border-radius:8px;
+
+    margin-bottom:8px;
+
+}
+
+.sidebar a.active
+{background:#4548d8}
+.sidebar a:hover{
+
+    background:#4548d8;
+
+}
+
+
+
+
+
+/* ================= MAIN ================= */
+
+
+.main{
+
+margin-left:230px;
+
+width:calc(100% - 230px);
+
+padding:22px;
+
+}
+
+
+
+
+/* HEADER */
+
+
+.page-header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+
+
+.page-header h2{
+
+font-size:32px;
+
+}
+
+
+.page-header p{
+
+color:#555;
+
+font-size:14px;
+
+}
+
+
+
+
+.add-btn{
+
+background:#3030aa;
+
+color:white;
+
+border:none;
+
+padding:12px 20px;
+
+border-radius:8px;
+
+font-size:15px;
+
+cursor:pointer;
+
+}
+
+
+
+.add-btn:hover{
+
+background:#20208a;
+
+}
+
+
+
+
+
+/* ================= CARDS ================= */
+
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:35px;
+
+margin-top:30px;
+
+}
+
+
+
+
+.card{
+
+height:110px;
+
+background:white;
+
+border-radius:10px;
+
+padding:15px;
+
+display:flex;
+
+flex-direction: row;
+
+gap: 20px;
+
+border:1px solid;
+
+}
+.card-icon{
+    width:45px;
+    height:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:8px;
+    font-size:22px;
+}
+
+
+.blue{
+    background:#eef0ff;
+    color:#4b50e6;
+}
+.green{
+    background:#e8fff0;
+    color:#34c759;
+}
+
+
+.orange{
+    background:#fff5e6;
+    color:#ff9f1c;
+}
+
+
+.red{
+    background:#ffeaf0;
+    color:#ff3366;
+}
+
+
+.card h3{
+
+font-size:14px;
+
+font-weight:500;
+
+}
+
+
+.card strong{
+
+display:block;
+
+font-size:25px;
+
+margin:15px 0;
+
+}
+
+
+
+.card p{
+
+font-size:12px;
+
+color:#888;
+
+}
+
+
+
+.card span{
+
+font-size:35px;
+
+}
+
+
+
+
+.total{
+
+border-color:#4c4cff;
+
+}
+
+
+.active-card{
+
+border-color:#65b66b;
+
+}
+
+
+.inactive{
+
+border-color:#f0aa38;
+
+}
+
+
+.archive{
+
+border-color:#ff5c9b;
+
+}
+
+
+
+
+
+/* ================= TABLE ================= */
+
+
+.subject-box{
+
+margin-top:20px;
+
+background:white;
+
+border-radius:12px;
+
+border:1px solid #aaa;
+
+overflow:hidden;
+
+}
+
+
+
+
+.table-header{
+
+height:65px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:0 20px;
+
+border-bottom:1px solid #ddd;
+
+}
+
+
+.table-header h2{
+
+font-size:22px;
+
+font-weight:500;
+
+}
+
+
+
+.table-header input{
+
+height:28px;
+
+width:180px;
+
+padding:5px 10px;
+
+}
+
+
+
+
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+}
+
+
+
+th{
+
+background:#f5f5f5;
+
+font-size:17px;
+
+text-align:left;
+
+padding:16px;
+
+}
+
+
+
+td{
+
+padding:15px;
+
+border-top:1px solid #ddd;
+
+font-size:14px;
+
+}
+
+
+
+
+.edit,
+.delete{
+
+border:none;
+
+color:white;
+
+width: 20%;
+height: 30px;
+
+border-radius:10px;
+
+cursor:pointer;
+
+}
+
+
+
+.edit{
+
+background:#3030aa;
+
+}
+
+.edit:hover{
+    background:#4242aa;
+}
+.delete:hover{
+    background:#e34e82;
+}
+.delete{
+
+background:#ed1260;
+
+}
+
+
+
+
+
+/* ================= RESPONSIVE ================= */
+
+
+
+@media(max-width:1000px){
+
+
+.cards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+}
+
+
+
+@media(max-width:700px){
+
+
+
+.sidebar{
+
+width:80px;
+
+}
+
+
+
+.sidebar h1{
+
+font-size:12px;
+
+}
+
+
+
+.sidebar a{
+
+font-size:12px;
+
+}
+
+
+
+.main{
+
+margin-left:80px;
+
+width:calc(100% - 80px);
+
+}
+
+
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.page-header{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:15px;
+
+}
+
+
+
+.subject-box{
+
+overflow-x:auto;
+
+}
+
+
+
+table{
+
+min-width:700px;
+
+}
+
+
+}

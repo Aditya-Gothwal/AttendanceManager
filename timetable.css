@@ -1,0 +1,68 @@
+ 
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#eef1f6}
+.container{display:flex}
+.sidebar{position:fixed;left:0;top:0;width:230px;height:100vh;background:#3032aa;color:#fff;padding:20px}
+.logo{text-align:center;font-size:22px;font-weight:bold;margin-bottom:50px}
+.sidebar a{display:block;color:#fff;text-decoration:none;padding:15px;font-size:17px;border-radius:8px;margin-bottom:8px}
+.sidebar a:hover,.sidebar a.active{background:#4548d8}
+.main{margin-left:230px;padding:24px;width:calc(100% - 230px)}
+.header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.header h1{font-size:44px}.header button{background:#3032aa;color:#fff;border:none;padding:14px 22px;border-radius:10px}
+.days{display:flex;gap:18px;margin:28px 0;flex-wrap:wrap}.days button{background:#fff;border:none;padding:12px 32px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.card,.quick{background:#fff;border-radius:18px;padding:18px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+table{width:100%;border-collapse:collapse}th,td{padding:16px;border-bottom:1px solid #ddd;text-align:left}
+.edit,.delete{padding:6px 12px;border-radius:6px;color:#fff;font-size:13px}.edit{background:#6366f1}.delete{background:#ef4444}
+.quick{margin-top:22px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:20px}
+.info{border:1px solid #ddd;border-radius:12px;padding:18px;display:flex;align-items:center;gap:14px}.info i{font-size:26px;color:#6366f1}
+.edit:hover{
+    background:#7577ec;
+    cursor: pointer;
+    
+}
+.delete:hover{
+    background:#db7878;
+    cursor: pointer;
+}
+.m:hover{
+    background-color:#3032aa;
+    cursor: pointer;
+    color: white;
+}
+.n:hover{
+    background-color: #4c4da1;
+    cursor: pointer;
+}
+.days button{
+
+    background:white;
+    color:black;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.days button:hover{
+
+    background:#4548d8;
+    color:white;
+
+}
+
+.days button.active-day{
+
+    background:#3032aa;
+
+    color:white;
+
+}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.sidebar{position:relative;width:100%;height:auto}.container{display:block}.main{margin:0;width:100%}.grid{grid-template-columns:1fr}.card{overflow:auto}}
