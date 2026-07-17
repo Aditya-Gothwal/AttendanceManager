@@ -36,7 +36,7 @@ const passwordValue = password.value.trim();
 
     alert("Login Successful!");
 
-    window.location.href = "index.html";
+    window.location.href = "dashboard.html";
 
 }
     else{
